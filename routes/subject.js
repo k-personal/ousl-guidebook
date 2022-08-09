@@ -34,7 +34,7 @@ router.post("/create", async (req, res) => {
   }
 });
 
-router.get("/", async (req, res) => {
+router.post("/", async (req, res) => {
   let l3Tot = 0;
   let l4Tot = 0;
   let l5Tot = 0;

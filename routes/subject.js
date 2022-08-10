@@ -67,7 +67,7 @@ router.post("/", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
   try {
-    let subject = await Subject.find({ code: req.params.id });
+    let subject = await Subject.findById(req.params.id);
     res.status(200).json(subject);
   } catch (err) {
     res.status(404).json("no product found");
